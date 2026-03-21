@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git config:*)",
+      "Bash(cmd /c \"gh --version\")",
+      "Bash(cmd /c \"gh auth status && gh repo list --limit 5\" 2>&1)"
+    ]
+  }
+}
