@@ -3,7 +3,10 @@
     "allow": [
       "Bash(git config:*)",
       "Bash(cmd /c \"gh --version\")",
-      "Bash(cmd /c \"gh auth status && gh repo list --limit 5\" 2>&1)"
+      "Bash(cmd /c \"gh auth status && gh repo list --limit 5\" 2>&1)",
+      "Bash(cmd /c \"where gh\")",
+      "Bash(cmd /c \"gh repo create MaxDax84/CV_Eleonora_Sanchez --public --description \"\"Eleonora Sanchez - Professional CV Website\"\" 2>&1\")",
+      "Bash(npm install:*)"
     ]
   }
 }
