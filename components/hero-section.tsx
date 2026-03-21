@@ -1,6 +1,6 @@
 "use client"
 
-import { Mail, MapPin, Phone } from "lucide-react"
+import { Mail, MapPin, Phone, Linkedin } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export function HeroSection() {
@@ -42,7 +42,7 @@ export function HeroSection() {
             Eleonora Sanchez
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed text-pretty">
-            5+ years in Management Consulting at Ernst &amp; Young and KPMG — driving
+            7+ years in Management Consulting at Ernst &amp; Young and KPMG — driving
             marketing strategy, customer experience, and business transformation
           </p>
 
@@ -60,10 +60,26 @@ export function HeroSection() {
                 eleonorasanchez1705@gmail.com
               </span>
             </a>
-            <div className="flex items-center gap-2">
+            <a
+              href="tel:+393383149480"
+              className="flex items-center gap-2 hover:text-primary transition-colors group"
+            >
               <Phone className="w-4 h-4 text-primary" />
-              <span>+39 338 3149480</span>
-            </div>
+              <span className="group-hover:underline underline-offset-4">
+                +39 338 3149480
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/eleonora-sanchez-99127a133/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-primary transition-colors group"
+            >
+              <Linkedin className="w-4 h-4 text-primary" />
+              <span className="group-hover:underline underline-offset-4">
+                LinkedIn
+              </span>
+            </a>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ export function AboutSection() {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p className="text-lg md:text-xl text-foreground font-medium text-pretty">
-              Business Consulting Manager with 5+ years of experience at Ernst &amp; Young
+              Business Consulting Manager with 7+ years of experience at Ernst &amp; Young
               and KPMG, specializing in marketing and sales strategy, customer experience,
               and business transformation.
             </p>
@@ -45,10 +45,10 @@ export function AboutSection() {
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { value: "5+", label: "Years in Consulting" },
+              { value: "7+", label: "Years in Consulting" },
               { value: "6+", label: "FTEs Led" },
               { value: "+12%", label: "NPS Increase" },
-              { value: "5+", label: "Industries" },
+              { value: "7+", label: "Industries" },
             ].map((stat, index) => (
               <div
                 key={index}
