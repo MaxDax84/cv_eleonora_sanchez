@@ -56,10 +56,12 @@ export function Navigation() {
 
         <div className="flex items-center gap-4">
           <a
-            href="mailto:eleonorasanchez1705@gmail.com"
+            href="https://www.linkedin.com/in/eleonora-sanchez-99127a133/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-sm text-primary hover:text-primary/80 transition-colors"
           >
-            Contact
+            LinkedIn
           </a>
           {/* Hamburger button */}
           <button

@@ -4,6 +4,7 @@ import { useInView } from "@/hooks/use-in-view"
 
 export function AboutSection() {
   const { ref, isInView } = useInView()
+  const yearsOfExperience = new Date().getFullYear() - 2019
 
   return (
     <section id="about" className="py-24 md:py-32 relative">
@@ -24,7 +25,7 @@ export function AboutSection() {
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p className="text-lg md:text-xl text-foreground font-medium text-pretty">
-              Business Consulting Manager with 7+ years of experience at Ernst &amp; Young
+              Business Consulting Manager with {yearsOfExperience}+ years of experience at Ernst &amp; Young
               and KPMG, specializing in marketing and sales strategy, customer experience,
               and business transformation.
             </p>
@@ -45,7 +46,7 @@ export function AboutSection() {
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { value: "7+", label: "Years in Consulting" },
+              { value: `${yearsOfExperience}+`, label: "Years in Consulting" },
               { value: "6+", label: "FTEs Led" },
               { value: "+12%", label: "NPS Increase" },
               { value: "7+", label: "Industries" },
