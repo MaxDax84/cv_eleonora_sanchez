@@ -24,6 +24,11 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+    setMenuOpen(false)
+  }
+
   return (
     <nav
       className={cn(
@@ -34,12 +39,12 @@ export function Navigation() {
       )}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link
-          href="#"
+        <button
+          onClick={scrollToTop}
           className="text-lg font-semibold tracking-tight text-foreground hover:text-primary transition-colors"
         >
           ES
-        </Link>
+        </button>
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-8">
