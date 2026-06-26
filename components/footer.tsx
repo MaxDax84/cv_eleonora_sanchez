@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Linkedin, MapPin } from "lucide-react"
 import { ContactReveal } from "@/components/contact-reveal"
 
@@ -36,7 +37,15 @@ export function Footer() {
             <MapPin className="w-4 h-4" />
             <span>Milan, Italy</span>
           </div>
-          <p>© {new Date().getFullYear()} Eleonora Sanchez. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <p>© {new Date().getFullYear()} Eleonora Sanchez. All rights reserved.</p>
+            <Link
+              href="/privacy-policy"
+              className="hover:text-primary transition-colors underline underline-offset-4"
+            >
+              Privacy Policy
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
